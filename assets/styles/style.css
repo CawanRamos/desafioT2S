@@ -1,0 +1,321 @@
+/*Gerais*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Plus Jakarta Sans", sans-serif;
+
+}
+
+#page {
+    max-width: 144rem;
+    margin: auto;
+    margin-top: 7.2rem;
+    padding: 0 3.2rem;
+}
+
+
+button:hover {
+    background: #5478F4;
+    cursor: pointer;
+    transition: .5s;
+}
+
+/*Primeira Seção*/
+#description {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+}
+
+.left h1 {
+    max-width: 60rem;
+    color: #181E4B;
+    font-family: "Plus Jakarta Sans";
+    font-size: 6rem;
+    font-weight: 800;
+    line-height: 6rem; /* 92.105% */
+    letter-spacing: -.3rem;
+}
+
+.left h1 span {
+    color:  #4737FF;
+}
+
+.left p {
+    max-width: 66rem;
+    color:  #5E6282;
+    font-family: "Plus Jakarta Sans";
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.4rem; /* 150% */
+}
+
+.btn-saberMais {
+    color: #FFF;
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: 700;
+    letter-spacing: .048rem;
+    padding: 1.6rem 3.6rem;
+    border-radius: 2.6rem;
+    border: none;
+    transition: .5s;
+    background: #4737FF;
+    max-width: 30rem;
+}
+
+
+.img-t2sLogo {
+    max-width:23.6rem;
+}
+
+.img-desenvolvimento {
+    max-width: 48rem;
+}
+
+/*Vantagens*/
+
+#advantages h2 {
+    color: #000;
+    font-size: 4.8rem;
+    font-weight: 800;
+    line-height: 6.5rem; /* 135.417% */
+    letter-spacing: .048rem;
+    margin-top: 8rem;
+}
+
+.advantesContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5rem;
+    gap: 3rem;
+
+}
+
+.advantage {
+    display: flex;
+    flex-direction: column;
+    max-width: 40rem;
+    height: 27.7rem;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    justify-content: space-between;
+}
+
+
+.box {
+    display: grid;
+    place-content: center;
+    width: 10.2rem;
+    height: 10.2rem;
+    flex-shrink: 0;
+    background-color: #4737FF;
+    border-radius: 2.6rem;
+    box-shadow: 0rem 3rem 6rem 0rem rgba(71, 74, 87, 0.25);
+}
+
+.box img {
+    width: 4.5rem;
+}
+
+.advantage h3 {
+    margin: 2rem 0 .5rem;
+    color: #000;
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: 700;
+    letter-spacing: .048rem;
+}
+
+.advantage p {
+    color:  #5E6282;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 3rem;
+    letter-spacing: .032rem;
+}
+
+/*Formulario*/
+    
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 4rem 4rem;
+    margin: 9.2rem 11rem 0;
+    border-radius: .5rem;
+    border: .1rem solid #4475F2;
+    box-shadow: 0 1.5rem 3rem 0 rgba(0, 0, 0, 0.10);
+}
+
+form h2 {
+    text-align: center;
+    color: #000;
+    font-size: 4.8rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 6.5rem; /* 135.417% */
+    letter-spacing: 0.048rem;
+    margin-bottom: 1.2rem;
+}
+
+label {
+    margin:2.7rem 0 1rem ;
+    color: #181E4B;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 700;
+}
+
+input {
+    border-radius: .4rem;
+    border: .1rem solid #DEDEDE;
+    color: var(--Desc, #5E6282);
+    font-family: "Plus Jakarta Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px; /* 228.571% */
+    padding: .5rem;
+}
+
+form button{
+    border-radius: 4px;
+    background:#4737FF;
+    box-shadow: 0px 15px 30px 0px rgba(68, 117, 242, 0.10);
+    color: #FFF;
+    text-align: center;
+    font-family: "Plus Jakarta Sans";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.48px;
+    padding: 2rem 0;
+    border: none;
+    margin-top: 4rem;
+}
+
+/*Rodape*/
+
+footer {
+    width: 100%;
+    border: 1px solid #000;
+    background: #4737FF;
+    padding: 2rem;
+    text-align: center;
+    margin: 6.4rem 0 0;
+}
+
+footer p {
+    color: #FFF;
+    -webkit-text-stroke-width: 1;
+    -webkit-text-stroke-color: #000;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+
+/*Responsividade  900px a 1250px*/
+
+@media only screen and (max-width: 1250px) {
+    .page {
+        width: 90rem;
+    }
+
+    #description{
+        gap: 3.2rem;
+    }
+
+    .img-desenvolvimento {
+        max-width: 40rem;
+    }
+
+    .advantage {
+        max-width: 24rem;
+    }
+
+    #advantages h2 {
+        margin-top: 5rem;
+    }
+    
+    footer {
+        margin-top: 10rem;
+    }
+  }
+
+
+  /*Responsividade  abaixo de 900px*/
+
+  @media only screen and (max-width: 900px) {
+    .page {
+        width: 90rem;
+    }
+
+    #description{
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    .img-desenvolvimento {
+        max-width: 37rem;
+    }
+
+    .btn-saberMais {
+        margin: auto;
+
+    }
+
+    #advantages  {
+        text-align: center;
+    }
+    .advantesContent {
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+    .advantage {
+        max-width: 30rem;
+        height: auto;
+    }
+
+    
+    #advantages h2 {
+        font-size: 3rem;
+        line-height: 4rem;
+    }
+
+    form{
+        padding: 2rem 2rem;
+        margin: 3rem .4rem 0;
+    }
+
+    form h2 {
+        font-size: 3rem;
+        line-height: 4rem; /* 135.417% */
+    }
+
+    footer {
+        margin-top: 6.4rem;
+    }
+  }
